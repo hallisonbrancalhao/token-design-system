@@ -1,0 +1,21 @@
+name: Create Figma Token PR
+
+on:
+    push:
+        branches:
+            - figma-tokens
+
+jobs:
+    pull-request:
+        runs-on: ubuntu-latest
+
+        steps: 
+        - uses: actions/checkout@v2
+
+        - name: Create PR
+          uses: repo-sync/pull-request@v2
+          with:
+            destination_branch: main
+            pr_title: "Figma Tokens Update"
+            pr_body: "Design Tokens were updated in Figma. This PR updates the tokens in the codebase."
+            github_token: ${{ secrets.GH_PH }}

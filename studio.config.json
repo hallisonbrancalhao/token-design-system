@@ -2,21 +2,9 @@
  "packages": {
   "dir": "",
   "menu": [
-   [
-    "TOKENS",
-    []
-   ],
-   [
-    "COMPONENTS",
-    []
-   ],
-   [
-    "INFRASTRUCTURE",
-    []
-   ],
-   "sd.config.cjs",
-   "sd.config.cjs"
-  ]
+   ["TOKENS",["tokens"]],
+   ["COMPONENTS",[]],
+   ["INFRASTRUCTURE",["sd-input"]],"sd.config.cjs","sd.config.cjs"]
  },
  "dependencies": {
   "autoInstall": false
